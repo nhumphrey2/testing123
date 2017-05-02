@@ -6013,3 +6013,7 @@ body > * {
   background-color: #005395 !important;
   background: url(https://i.imgur.com/WrWbkJT.png) !important;
   background-size: contain; }
+
+img.center-block.img-fluid.d-block.mx-auto.rounded {
+  height: 200px !important;
+  width: 200px !important; }
