@@ -22,7 +22,7 @@ $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
 $green:  #5cb85c !default;
 $blue:   #0275d8 !default;
-$teal:   #5bc0de !default;
+$teal:   #407ec9 !default;
 $pink:   #ff5b77 !default;
 $purple: #613d7c !default;
 
@@ -171,4 +171,7 @@ img.center-block.img-fluid.d-block.mx-auto.rounded {
 h1.text-right.text-danger.display-4 {
     color: #e45d50 !important;
   text-shadow: 1px 0px 1px !important;
+}
+.py-5.bg-primary {
+    background: #d0cec9 !important;
 }
