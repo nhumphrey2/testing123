@@ -39,7 +39,7 @@ $brand-primary:             $gray-dark !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
-$brand-danger:              $red !default;
+$brand-danger:              #e45d50!default;
 $brand-inverse:             $gray-dark !default;
 
 
@@ -168,4 +168,7 @@ img.center-block.img-fluid.d-block.mx-auto.rounded {
   height:200px !important;
   width:200px !important;
 }
-
+h1.text-right.text-danger.display-4 {
+    color: #e45d50 !important;
+  text-shadow: 1px 0px 1px !important;
+}
