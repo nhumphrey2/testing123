@@ -6010,4 +6010,6 @@ body > * {
   background-position: center; }
 
 .bg-primary {
-  background-color: #005395 !important; }
+  background-color: #005395 !important;
+  background: url(https://i.imgur.com/WrWbkJT.png) !important;
+  background-size: contain; }
