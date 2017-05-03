@@ -153,6 +153,21 @@ $blockquote-font-size:    ($font-size-base * 1.25) !default;
 
 // ADD YOUR CUSTOM CSS HERE  
 
+nav.navbar.navbar-expand-md.navbar-light.text-center.w-100 { background-color:#0063af;}
+.text-center.d-flex.h-100.align-items-center.bg-primary {
+    background: navy !important;
+    
+}
+
+p.text-capitalize.w-100.text-danger{color:#999 !important;
+}
+a.nav-link {
+    color: #eee !important;
+}
+button.btn.btn-danger.btn-lg.text-center.my-1.w-25.py-2 {background:#9f4641!important;
+}
+
+
 body > * {
   background-size: cover;
   background-repeat: none;
