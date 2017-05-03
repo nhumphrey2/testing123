@@ -6008,7 +6008,8 @@ nav.navbar.navbar-expand-md.navbar-light.text-center.w-100 {
   background-color: #0063af; }
 
 .text-center.d-flex.h-100.align-items-center.bg-primary {
-  background: navy !important; }
+  background: navy !important;
+  opacity: .9; }
 
 p.text-capitalize.w-100.text-danger {
   color: #999 !important; }
