@@ -6010,4 +6010,12 @@ body > * {
   background-position: center; }
 
 .text-center.d-flex.h-100.align-items-center.bg-primary {
-  background: #0063af !important; }
+  background: #0063af !important;
+  opacity: .9; }
+
+nav.navbar.navbar-expand-md.navbar-light.text-center.w-100 {
+  background: #002171 !important;
+  opacity: .8; }
+
+a.nav-link {
+  color: white !important; }
