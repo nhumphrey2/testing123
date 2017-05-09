@@ -6003,36 +6003,3 @@ a.text-gray-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
-
-nav.navbar.navbar-expand-md.navbar-light.text-center.w-100 {
-  background-color: #0063af; }
-
-nav.navbar.navbar-expand-md.navbar-light.text-center.w-100 {
-  background-color: #212121; }
-
-p.text-capitalize.w-100.text-danger {
-  color: #999 !important; }
-
-a.nav-link {
-  color: #eee !important; }
-
-button.btn.btn-danger.btn-lg.text-center.my-1.w-25.py-2, .btn-group-lg > button.btn.btn-danger.text-center.my-1.w-25.py-2 {
-  background: #9f4641 !important; }
-
-h1.display-4.text-right.text-danger {
-  font-size: 2.5rem; }
-
-body > * {
-  background-size: cover;
-  background-repeat: none;
-  background-position: center; }
-
-nav.navbar.navbar-expand-md.navbar-light.py-3 {
-  background: #2c6d97; }
-
-.col-md-6.offset-md-6 {
-  background: white; }
-
-.py-5.text-danger.bg-inverse {
-  background: #eb312e !important;
-  color: white !important; }
