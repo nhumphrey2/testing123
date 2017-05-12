@@ -11,6 +11,10 @@
       overflow-x: hidden;
     }
 
+    a.nav-link {
+      color: white!important;
+    }
+
     nav.navbar.navbar-expand-md.navbar-light.m-0.p-3.bg-primary {}
 
     h1.display-3.text-danger {
@@ -37,18 +41,22 @@
 <body class="">
   <nav class="navbar navbar-expand-md m-0 p-3 bg-inverse navbar-light">
     <div class="container">
-      <a class="navbar-brand px-0" href="#"><img src="https://i.imgur.com/UY1jjZo.gif" width="32" height="40" class="d-inline-block align-top" alt="">&nbsp;</a> <button class="navbar-toggler navbar-toggler-right bg-faded" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon text-muted"></span>
-                  </button>
+      <a class="navbar-brand px-0" href="#">
+        <img src="https://i.imgur.com/UY1jjZo.gif" width="32" height="40" class="d-inline-block align-top" alt="">&nbsp;</a>
+      <button class="navbar-toggler navbar-toggler-right bg-faded" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon text-muted"></span> </button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active px-5 mx-4"> <a class="nav-link" href="#">Jobs<span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item active px-5 mx-4">
+            <a class="nav-link" href="#">Jobs<span class="sr-only">(current)</span></a>
+          </li>
           <li class="nav-item px-5 w-50 mx-5">
             <a class="nav-link" href="#"></a>
           </li>
         </ul>
-        <form class="form-inline my-lg-0 text-gray-dark mx-2"> <input class="form-control mr-sm-2" type="text" placeholder="Search"> <button class="btn my-2 my-sm-0 btn-outline-secondary" type="submit">Search</button> </form>
+        <form class="form-inline my-lg-0 text-gray-dark mx-2">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn my-2 my-sm-0 btn-outline-secondary" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -56,12 +64,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h1 class="display-4 text-white py-2">Welcome, User<br></h1>
+          <h1 class="display-4 text-white py-2">Welcome, User
+            <br> </h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="lead text-success">My Profile</p>
+          <p class="lead text-info">My Profile</p>
         </div>
       </div>
     </div>
@@ -70,35 +79,74 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6 text-left">
-          <div class="card" style="padding-top:10px;"> <img src="https://pingendo.com/assets/photos/user_placeholder.png" class="rounded-circle img-fluid d-block py-0 mx-auto" height="150" width="250">
+          <div class="card" style="padding-top:10px;">
             <div class="card-block text-left">
               <h4 class="card-title text-gray-dark text-center">Last Name, First Name</h4>
-              <hr class=""><br>
-              <p class="card-text p-y-1 lead text-left">Interpreter Bio - Additional Information</p> <a href="#" class="card-link"><b class="text-muted">(402) 926-8844</b></a> <a href="#" class="card-link"><b><span style="font-weight: normal;"><u><b>nhumphrey@gmail.com</b></u></span></b></a></div>
-            <a href="#" class="btn btn-outline-primary px-2 m-3 btn-sm">Edit Info</a> </div>
+              <hr class="">
+              <br>
+              <p class="card-text p-y-1 lead text-left">Interpreter Bio - Additional Information</p>
+              <a href="#" class="card-link"><b class="text-muted">(402) 926-8844</b></a>
+              <a href="#" class="card-link"><b><span style="font-weight: normal;"><u><b>nhumphrey@gmail.com</b></u>
+                </span>
+                </b>
+              </a>
+            </div>
+            <a href="#" class="btn btn-outline-primary px-2 m-3 btn-sm">Edit Info</a>
+          </div>
         </div>
         <div class="col-md-6 col-sm-6 mx-auto">
           <div class="card">
             <div class="card-block w-100">
               <h3 class="text-capitalize text-gray-dark px-0 mx-auto text-center">Interpreter Information</h3>
-              <hr class="">
-              <div class="btn-group"> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Select Languages </button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="#">Thai</a> <a class="dropdown-item" href="#">Russian</a> <a class="dropdown-item" href="#">Swahili</a><a class="dropdown-item" href="#">Somali</a>
-                  <div class="dropdown-divider"><a class="dropdown-item" href="#">Swahili</a> <a class="dropdown-item" href="#">Swahili</a> <a class="dropdown-item" href="#">Swahili</a> </div>
-                </div>
-              </div>
-            </div>
+              <hr class="w-100"> </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="card-block">
                   <h4 class="card-title text-success">Applicable Certifications</h4>
-                  <p class="card-text p-y-1">Interpreter Credentials</p>
-                  <div class="btn-group text-center"> <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Credentials </button>
-                    <div class="dropdown-menu"> <a class="dropdown-item" href="#">(M.D.)</a> <a class="dropdown-item" href="#">(MOT)</a> <a class="dropdown-item" href="#">EMT-B</a>
-                      <div class="dropdown-divider"><a class="dropdown-item" href="#">Swahili</a> <a class="dropdown-item" href="#">(DPT)</a> <a class="dropdown-item" href="#">(OT)</a> </div>
-                    </div>
-                  </div>
+                  <table class="table">
+                    <thead class="">
+                      <tr class="">
+                        <th class="">Languages</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td contenteditable="true" class="bg-faded">Thai</td>
+                        <td class="bg-faded">Spanish</td>
+                      </tr>
+                      <tr>
+                        <td>Somali</td>
+                        <td class="">French</td>
+                      </tr>
+                      <tr>
+                        <td class="bg-faded">Russian</td>
+                        <td class="bg-faded">German</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="card-text p-y-1 lead text-primary">Interpreter Credentials</p>
                 </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Certifications</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>(MD)</td>
+                      <td class="">RN</td>
+                    </tr>
+                    <tr>
+                      <td>(DO)</td>
+                      <td>CCRN</td>
+                    </tr>
+                    <tr>
+                      <td>NP</td>
+                      <td>DPT</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
