@@ -31,15 +31,55 @@
       </div>
     </div>
   </nav>
+  <div class="py-5 bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-center text-white">Session Details</h3>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5">
     <div class="container-fluid">
       <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Russian Interpretation</h4>
+              <h6 class="card-subtitle text-muted">Charles Drew Health Center</h6>
+            </div>
+          </div>
+          <p class=""> </p>
+          <form>
+            <div class="form-group"> <label for="formGroupExampleInput">Session Duration</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Time"> </div>
+            <div class="form-group"> <label for="formGroupExampleInput2">Session Date</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input"> </div>
+          </form>
+          <p></p>
+          <form class="form-inline"> <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label> <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+    <option selected="">Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select> <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+    <input type="checkbox" class="custom-control-input" value="on">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Remember my preference</span>
+  </label>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <p></p>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-sm-12 col-xs-12">
           <ul class="list-group">
-            <li class="list-group-item"><i class="fa fa-home fa-fw"></i>Cras justo odio </li>
+            <li class="list-group-item active">Cras justo odio </li>
             <li class="list-group-item">Dapibus ac facilisis</li>
             <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur</li>
+            <li class="list-group-item disabled">Porta ac consectetur</li>
           </ul>
         </div>
       </div>
