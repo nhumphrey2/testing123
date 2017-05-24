@@ -10,6 +10,13 @@
       background-color: #254a71 !important;
     }
 
+    .row-eq-height {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
     .card-block.text-xs-center {
       background: #3a607d !important;
     }
@@ -80,7 +87,7 @@
   <nav class="navbar navbar-expand-md navbar-light py-3 my-0 bg-primary" style="background:#254A6D!important;bottom-border-color:#fafafa;bottom-border-width:3px;bottom-border-style:solid;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="https://i.imgur.com/FMJEKDl.png" width="200" height="70" class="d-inline-block align-top p-3" alt=""> </a>
+        <img src="https://i.imgur.com/FMJEKDl.png" width="200" height="70" class="d-inline-block align-top p-3 w-100" alt=""> </a>
       <button class="navbar-toggler navbar-toggler-right bg-faded" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon text-white"></span> </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -97,12 +104,12 @@
             <a class="nav-link" href="#"><b><span style="font-weight: normal;">About</span></b></a>
           </li>
         </ul>
-        <a class="btn btn-danger" href="#">Login<i class="fa fa-fw fa-angle-right"></i></a>
+        <a class="btn btn-outline-secondary" href="#">Login<i class="fa fa-fw fa-angle-right"></i></a>
       </div>
     </div>
   </nav>
-  <div class="text-center d-flex align-items-center py-4" style="background-size: cover; background-image: url(&quot;https://i.imgur.com/5QiZdKY.jpg&quot;);">
-    <div class="container">
+  <div class="text-center d-flex align-items-center py-4 w-100" style="background-size: cover; background-image: url(&quot;https://i.imgur.com/5QiZdKY.jpg&quot;);">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 offset-md-6">
           <h1 class="display-4 text-right text-danger">Navigate Your Spend</h1>
@@ -115,35 +122,38 @@
   </div>
   <div class="p-3 m-5">
     <div class="container-fluid">
-      <div class="row"> </div>
-      <div class="row">
-        <div class="text-center col-md-3 p-2 equal-cell">
+      <div class="row row-eq-height">
+        <div class="text-center col-md-3 p-2 equal-cell" style="height:400px">
           <img class="center-block img-fluid d-block mx-auto" src="https://i.imgur.com/P0IWbub.png" height="150" width="150">
-          <h3 class="text-center text-primary py-3">Spend Visibility</h3>
-          <p class="text-left text-gray-dark p-1 my-2" style="font-size:12px;">Identify sourcing opportunities and drill down into the details to get real insight. Simple point-and- click navigation helps you identify areas of non-compliance and immediately visualize your impact. Use the SpendHQ proprietary Power Filter
+          <br>
+          <h3 class="text-center text-primary py-2">Spend Visibility</h3>
+          <p class="text-gray-dark p-1 my-3 text-justify" style="font-size:12px;">Identify sourcing opportunities and drill down into the details to get real insight. Simple point-and- click navigation helps you identify areas of non-compliance and immediately visualize your impact. Use the SpendHQ proprietary Power Filter
             to slice and dice your data the way you want to see it. No expertise required.</p>
           <a href="#" class="btn btn-secondary" style="background:#3a607d;color:white;">Button</a>
         </div>
-        <div class="text-center col-md-3 p-2 equal-cell">
-          <img class="center-block d-block img-fluid m-3 mx-auto" src="https://i.imgur.com/VY3DBkZ.png" height="150" width="150">
+        <div class="text-center col-md-3 p-2 equal-cell" style="height:400px">
+          <img class="center-block d-block img-fluid m-2 mx-auto" src="https://i.imgur.com/VY3DBkZ.png" height="150" width="150">
+          <br>
           <h3 class="text-center text-primary">Contract Visibility</h3>
-          <p class="text-left text-gray-dark p-1" style="font-size:12px;"> Obtain clear and actionable insight into your vendor contracts and agreements to maximize your strategic sourcing leverage and create measurable savings. Explore your contracts collectively and individually. Sort them by contract value, e ective
+          <p class="text-gray-dark p-1 py-2 m-3 text-justify" style="font-size:12px;"> Obtain clear and actionable insight into your vendor contracts and agreements to maximize your strategic sourcing leverage and create measurable savings. Explore your contracts collectively and individually. Sort them by contract value, e ective
             dates, document types, and other attributes. Gain visibility into the usage amounts for your contracts.</p>
           <a href="#" class="btn btn-primary" style="background:#3a607d">Button</a>
         </div>
-        <div class="col-md-3 p-2 text-center">
+        <div class="col-md-3 p-2 text-center" style="height:400px">
           <img class="center-block img-fluid d-block mx-auto" src="https://i.imgur.com/0owk59a.png" height="150" width="150">
-          <h3 class="text-center text-primary py-2">Category Management</h3>
-          <p class="text-left text-gray-dark my-2 p-1" style="font-size:12px;">Analyze major sourcing categories at an in-depth level to monitor compliance and pricing accuracy. Empower your procurement professionals with instant access to the information they need to uncover maverick spend by strategic category. Review
+          <br>
+          <h3 class="text-center text-primary py-1">Category Management</h3>
+          <p class="text-gray-dark my-3 p-1 m-2 text-justify" style="font-size:12px;">Analyze major sourcing categories at an in-depth level to monitor compliance and pricing accuracy. Empower your procurement professionals with instant access to the information they need to uncover maverick spend by strategic category. Review
             your category spend and analyze it in greater detail by viewing comprehensive cross sections.</p>
-          <a href="#" class="btn text-center btn-primary" style="background:#3a607d">Button</a>
+          <a href="#" class="my-2 btn text-center btn-primary" style="background:#3a607d">Button</a>
         </div>
         <div class="col-md-3 p-2 text-center">
-          <img class="center-block img-fluid d-block mx-auto" src="https://i.imgur.com/h5b3p8W.png" height="130" width="130">
+          <img class="center-block img-fluid d-block mx-auto" src="https://i.imgur.com/h5b3p8W.png" height="150" width="150">
+          <br>
           <h3 class="text-center text-primary py-1">Vendor Information Management</h3>
-          <p class="text-left text-gray-dark my-3 p-3" style="font-size:12px;">Access highly detailed and current supplier information powered by InsideView APIs. Track compliance, research sourcing opportunities, understand vendor capabilities, and improve vendor communications in relation to your spend.</p>
+          <p class="text-gray-dark my-2 p-2 text-justify m-2" style="font-size:12px;">Access highly detailed and current supplier information powered by InsideView APIs. Track compliance, research sourcing opportunities, understand vendor capabilities, and improve vendor communications in relation to your spend.</p>
           <a href="#"
-            class="btn btn-primary" style="background:#3a607d">Button</a>
+            class="btn btn-primary my-3" style="background:#3a607d">Button</a>
         </div>
       </div>
     </div>
