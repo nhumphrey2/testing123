@@ -48,8 +48,12 @@ $brand-inverse:             $gray-dark !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-rounded:            true !default;
-$enable-shadows:            false !default;
-$enable-gradients:          false !default;
+$enable-shadows:            true;
+
+
+$enable-gradients:          true;
+
+
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
@@ -62,7 +66,10 @@ $enable-print-styles:       true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: 1.5rem;
+
+
+
 $spacers: (
   0: 0,
   1: ($spacer * .25),
@@ -145,6 +152,16 @@ $lead-font-weight: 300 !default;
 $small-font-size: 80% !default;
 
 $blockquote-font-size:    ($font-size-base * 1.25) !default;
+
+
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 960px);
+
+
+
+
+
+
 
 
 
