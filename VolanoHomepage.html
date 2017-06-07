@@ -5,47 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" integrity="sha256-8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU=" crossorigin="anonymous">
   <link rel="stylesheet" href="http://kendo.cdn.telerik.com/VERSION/styles/kendo.common-bootstrap.min.css">
   <link rel="stylesheet" href="http://kendo.cdn.telerik.com/VERSION/styles/kendo.bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/wine121omaha/raw/upload/volanohomesample_ssxdbl.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
-  <link href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
-  <link href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css">
-  <script src="https://kendo.cdn.telerik.com/2017.2.504/js/jquery.min.js"></script>
-  <script src="https://kendo.cdn.telerik.com/2017.2.504/js/jszip.min.js"></script>
-  <script src="https://kendo.cdn.telerik.com/2017.2.504/js/kendo.all.min.js"></script>
-  <script src="https://kendo.cdn.telerik.com/2017.2.504/js/kendo.aspnetmvc.min.js"></script>
-  <script src="@Url.Content(" ~="" scripts="" kendo.modernizr.custom.js="" ")"=""></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <title>Home Page</title>
-  <link href="./Volanohomepage_files/css" rel="stylesheet" type="text/css">
-  <link href="./Volanohomepage_files/font-awesome.min.css" rel="stylesheet">
-  <link href="./Volanohomepage_files/application.css" rel="stylesheet">
-  <link href="./Volanohomepage_files/metisMenu.min.css" rel="stylesheet">
-  <script src="./Volanohomepage_files/modernizr-2.6.2.js.download"></script>
-  <script src="./Volanohomepage_files/modernizr-2.8.3.js.download"></script>
-  <script src="./Volanohomepage_files/jquery.min.js.download"></script>
-  <link href="./Volanohomepage_files/kendo.common-bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="./Volanohomepage_files/kendo.mobile.all.min.css" rel="stylesheet" type="text/css">
-  <link href="./Volanohomepage_files/kendo.dataviz.min.css" rel="stylesheet" type="text/css">
-  <link href="./Volanohomepage_files/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="./Volanohomepage_files/kendo.dataviz.bootstrap.min.css" rel="stylesheet" type="text/css">
-  <script src="./Volanohomepage_files/jquery.min.js(1).download"></script>
-  <script src="./Volanohomepage_files/jszip.min.js.download"></script>
-  <script src="./Volanohomepage_files/kendo.all.min.js.download"></script>
-  <script src="./Volanohomepage_files/kendo.aspnetmvc.min.js.download"></script>
-  <script src="./Volanohomepage_files/kendo.modernizr.custom.js.download"></script>
-</head>
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css"> </head>
 
 <body>
   <div id="wrapper">
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;background:#222;">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <a class="navbar-brand hidden-xs" href="index.html">Volano Portal</a>
@@ -83,7 +54,7 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a class="text-center" href="#"> <strong>Read All Messages</strong> <i class="fa fa-angle-right"></i> </a>
+              <a href="#" class="text-center"> <strong>Read All Messages</strong> <i class="fa fa-angle-right"></i> </a>
             </li>
           </ul>
           <!-- /.dropdown-messages -->
@@ -308,111 +279,117 @@
       <!-- /.navbar-static-side -->
     </nav>
     <div id="page-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-      </div>
-    </div>
-    <!-- /.row -->
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3"> <i class="fa fa-comments fa-5x"></i> </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">26</div>
-                <div>New Comments!</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3"> <i class="fa fa-comments fa-5x"></i> </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">26</div>
+                  <div>New Comments!</div>
+                </div>
               </div>
             </div>
+            <a href="#">
+              <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
           </div>
-          <a href="#">
-            <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="panel panel-green">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3"> <i class="fa fa-tasks fa-5x"></i> </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">12</div>
-                <div>New Tasks!</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-green">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3"> <i class="fa fa-tasks fa-5x"></i> </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">12</div>
+                  <div>New Tasks!</div>
+                </div>
               </div>
             </div>
+            <a href="#">
+              <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
           </div>
-          <a href="#">
-            <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="panel panel-yellow">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3"> <i class="fa fa-shopping-cart fa-5x"></i> </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">124</div>
-                <div>New Orders!</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-yellow">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3"> <i class="fa fa-shopping-cart fa-5x"></i> </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">124</div>
+                  <div>New Orders!</div>
+                </div>
               </div>
             </div>
+            <a href="#">
+              <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
           </div>
-          <a href="#">
-            <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="panel panel-red">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-3"> <i class="fa fa-support fa-5x"></i> </div>
-              <div class="col-xs-9 text-right">
-                <div class="huge">13</div>
-                <div>Support Tickets!</div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-red">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3"> <i class="fa fa-support fa-5x"></i> </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">13</div>
+                  <div>Support Tickets!</div>
+                </div>
               </div>
             </div>
+            <a href="#">
+              <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
           </div>
-          <a href="#">
-            <div class="panel-footer"> <span class="pull-left">View Details</span> <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-              <div class="clearfix"></div>
-            </div>
-          </a>
         </div>
       </div>
     </div>
     <!-- /.row -->
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="panel panel-default">
-          <div class="panel-heading"> <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-            <div class="pull-right">
-              <div class="btn-group">
-                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"> Actions <span class="caret"></span> </button>
-                <ul class="dropdown-menu pull-right" role="menu">
-                  <li>
-                    <a href="#">Action</a>
-                  </li>
-                  <li>
-                    <a href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a href="#">Something else here</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">Separated link</a>
-                  </li>
-                </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="panel panel-default">
+            <div class="panel-heading"> <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+              <div class="pull-right">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown"> Actions <span class="caret"></span> </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li>
+                      <a href="#">Action</a>
+                    </li>
+                    <li>
+                      <a href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a href="#">Something else here</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -525,115 +502,122 @@
           <!-- /.panel-body -->
         </div>
         <!-- /.panel -->
-        <div class="panel panel-default">
-          <div class="panel-heading"> <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline </div>
-          <!-- /.panel-heading -->
-          <div class="panel-body">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-badge"> <i class="fa fa-check"></i> </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                    <p> <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small> </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta,
-                      debitis.</p>
-                  </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading"> <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                  <ul class="timeline">
+                    <li>
+                      <div class="timeline-badge"> <i class="fa fa-check"></i> </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                          <p> <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small> </p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem
+                            dicta, debitis.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge warning"> <i class="fa fa-credit-card"></i> </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge danger"> <i class="fa fa-bomb"></i> </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge info"> <i class="fa fa-save"></i> </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
+                          <hr>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-gear"></i> <span class="caret"></span> </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li>
+                                <a href="#">Action</a>
+                              </li>
+                              <li>
+                                <a href="#">Another action</a>
+                              </li>
+                              <li>
+                                <a href="#">Something else here</a>
+                              </li>
+                              <li class="divider"></li>
+                              <li>
+                                <a href="#">Separated link</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge success"> <i class="fa fa-graduation-cap"></i> </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque
+                            eaque.</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge warning"> <i class="fa fa-credit-card"></i> </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-badge danger"> <i class="fa fa-bomb"></i> </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-badge info"> <i class="fa fa-save"></i> </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
-                    <hr>
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-gear"></i> <span class="caret"></span> </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li>
-                          <a href="#">Action</a>
-                        </li>
-                        <li>
-                          <a href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a href="#">Something else here</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                          <a href="#">Separated link</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge success"> <i class="fa fa-graduation-cap"></i> </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                <!-- /.panel-body -->
+              </div>
+              <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-8 -->
           </div>
-          <!-- /.panel-body -->
         </div>
-        <!-- /.panel -->
       </div>
-      <!-- /.col-lg-8 -->
       <div class="col-lg-4">
         <div class="panel panel-default">
           <div class="panel-heading"> <i class="fa fa-bell fa-fw"></i> Notifications Panel </div>
@@ -724,7 +708,7 @@
                                         <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
                                     </span>
                 <div class="chat-body clearfix">
-                  <div class="header"> <small class=" text-muted">
+                  <div class="header"> <small class="text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
                                             </small> <strong class="pull-right primary-font">Bhaumik Patel</strong> </div>
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
@@ -744,7 +728,7 @@
                                         <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
                                     </span>
                 <div class="chat-body clearfix">
-                  <div class="header"> <small class=" text-muted">
+                  <div class="header"> <small class="text-muted">
                                                 <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
                                             </small> <strong class="pull-right primary-font">Bhaumik Patel</strong> </div>
                   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales. </p>
@@ -771,6 +755,18 @@
   </div>
   <!-- /#page-wrapper -->
   <!-- /#wrapper -->
+  <!-- jQuery -->
+  <script src="/libraries/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="/libraries/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Metis Menu Plugin JavaScript -->
+  <script src="/libraries/metisMenu/dist/metisMenu.min.js"></script>
+  <!-- Morris Charts JavaScript -->
+  <script src="/libraries/raphael/raphael-min.js"></script>
+  <script src="/libraries/morrisjs/morris.min.js"></script>
+  <script src="/Scripts/morris-data.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="/Scripts/application.js"></script>
 </body>
 
 </html>
