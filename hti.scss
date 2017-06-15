@@ -7,7 +7,10 @@ $brand-success:             #5cb85c;
 $brand-info:                #5bc0de;
 $brand-warning:             #f0ad4e;
 $brand-danger:              #d9534f;
-$brand-inverse:             #292b2c;
+$brand-inverse:             steelblue;
+
+
+
 
 
 // Options
@@ -15,9 +18,11 @@ $brand-inverse:             #292b2c;
 // Quickly modify global styling by enabling or disabling optional features.
  
 $enable-rounded:            true !default;
-$enable-shadows:            true;
+$enable-shadows:            false;
 
-$enable-gradients:          true;
+
+$enable-gradients:          false;
+
 
 $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
@@ -51,6 +56,9 @@ $display3-size: 4.5 * $font-size-base;
 $display4-size: 3.5 * $font-size-base;
 
 $border-radius: .25rem;
+
+
+$enable-opacity: true;
 
 
 @import 'bootstrap-4.0.0-alpha.6';
