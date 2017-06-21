@@ -1598,7 +1598,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       max-width: 100%; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1140px;
+      width: 960px;
       max-width: 100%; } }
 
 .container-fluid {
@@ -6060,6 +6060,26 @@ body > * {
 .opaque-fade-out.bg-info > *:first-child:before {
   background: inherit;
   background-image: linear-gradient(to bottom, transparent 0%, #dadad8 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, white 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-primary > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #00b0eb 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-inverse > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #292b2c 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-info > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #dadad8 0%, transparent 100%);
   background-repeat: repeat-x; }
 
 .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
