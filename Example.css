@@ -5925,6 +5925,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 body > * {
   background-size: cover; }
+  body > *.h-100 {
+    min-height: 100%;
+    height: auto !important; }
 
 .bg-primary {
   color: #ffffff; }
@@ -6015,3 +6018,72 @@ body > * {
   box-shadow: 0px 0px 3px #666; }
 
 /*@include text-shadow-variant('.display-1', $shadow-color);*/
+.opaque {
+  overflow: hidden;
+  position: relative; }
+  .opaque > *:first-child:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+
+.opaque > *:first-child:before {
+  background: rgba(255, 255, 255, 0.8); }
+
+.opaque.bg-primary > *:first-child:before {
+  background: rgba(2, 117, 216, 0.8); }
+
+.opaque.bg-inverse > *:first-child:before {
+  background: rgba(41, 43, 44, 0.8); }
+
+.opaque.bg-info > *:first-child:before {
+  background: rgba(91, 192, 222, 0.8); }
+
+.opaque-fade-out > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, transparent 0%, #fff 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-out.bg-primary > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, transparent 0%, #0275d8 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-out.bg-inverse > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, transparent 0%, #292b2c 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-out.bg-info > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, transparent 0%, #5bc0de 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #fff 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-primary > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #0275d8 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-inverse > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #292b2c 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.opaque-fade-in.bg-info > *:first-child:before {
+  background: inherit;
+  background-image: linear-gradient(to bottom, #5bc0de 0%, transparent 100%);
+  background-repeat: repeat-x; }
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-family: inherit; }
+
+nav.navbar.navbar-expand-md.navbar-light.bg-faded {
+  background-color: #33668f !important; }
