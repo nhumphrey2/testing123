@@ -1637,7 +1637,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       max-width: 100%; } }
   @media (min-width: 1200px) {
     .container {
-      width: 960px;
+      width: 1140px;
       max-width: 100%; } }
 
 .container-fluid {
