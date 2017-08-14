@@ -1,16 +1,559 @@
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+  <title>Action Check Style Guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="actioncheckstyleguide.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,700i" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    /* latin-ext */
 
-  <body>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-  </body>
-  
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 900;
+      src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v13/t85RP2zhSdDjt5PhsT_SnlKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 900;
+      src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v13/lEjOv129Q3iN1tuqWOeRBgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v13/cT2GN3KRBUX69GVJ2b2hxn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v13/1KWMyx7m-L0fkQGwYhWwuuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 700;
+      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v13/AcvTq8Q0lyKKNxRlL28Rn4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 700;
+      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v13/HkF_qI1x_noxlxhrhMQYEJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+
+    .btn-primary:hover {
+      opacity: .8;
+      color: white!important;
+      border-color: inherit!Important;
+      transition: .25s
+    }
+
+    .abcefd:hover {
+      background-color: #92afd7!important;
+      color: white;
+      opacity: .6;
+    }
+
+    .input-lg {
+      height: 46px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 0px;
+      border: 1px solid #ccc;
+    }
+
+    .btn-sm {
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-radius: 0px;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+      display: block;
+    }
+
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open-sans', sans-serif;
+    }
+
+    .btn {
+      border-radius: 0;
+      transition: all .25s;
+    }
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .btn-default {
+      color: #333;
+      background-color: #fff;
+      border-color: #cecece;
+    }
+
+    button.categoryHeader.btn-lg.btn.btn-block {
+      border-width: 1px;
+      border-color: #bbb;
+      border-style: solid;
+    }
+
+    .btn-lg {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 0px;
+      background-color: #dddddd;
+      color: black;
+    }
+
+    btn.btn-default.btn-block.dropdown-toggle {
+      background-color: white;
+    }
+
+    .btn-success.btn-outline {
+      color: #5cb85c;
+      background-color: transparent;
+      transition: all .5s;
+    }
+
+    .btn-success {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+
+    .btn-group,
+    .btn-group-vertical {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .response.btn.btn-default {
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+
+    button.btn.btn-success.new-reviewtool {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .k-button.k-upload-button {
+      background: #dedede;
+    }
+
+    button.btn.btn-default.pull-right.misc-popover {
+      margin-right: .1rem;
+    }
+
+    .btn-outline {
+      color: inherit;
+      background-color: transparent;
+      transition: all .5s;
+    }
+
+    .btn-primary.btn-outline:hover,
+    .btn-success.btn-outline:hover,
+    .btn-info.btn-outline:hover,
+    .btn-warning.btn-outline:hover,
+    .btn-danger.btn-outline:hover {
+      color: white;
+    }
+
+    .navbar-toggle {
+      margin-bottom: 0;
+      margin-top: 3px;
+      margin-right: 5px;
+      border-color: #ddd;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #92afd7!important;
+      border-color: #7fa1d0;
+    }
+
+    .btn-primary-darker {
+      background: #6e879f;
+      color: #fffffb;
+    }
+
+    .navbar-default {
+      background-color: #92afd7!important;
+    }
+  </style>
+  <link rel="stylesheet" href="Example.css"> </head>
+
+<body>
+  <div class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#92afd7;padding-left:15px;padding-right:15px;">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-ex-collapse" style="background-color:transparent;border-color:transparent;"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar" style="color:white!important;background-color:white;"></span> <span class="icon-bar" style="color:white!important;background-color:white;"></span> <span class="icon-bar" style="color:white!important;background-color:white;"></span>          </button>
+        <a class="navbar-brand" href="#">
+          <img height="20" alt="Brand" src="https://i.imgur.com/9h7Ntzr.png" class="center-block img-responsive" style="margin-left:10px"> </a>
+      </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar-ex-collapse" style="background:#92afd7">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="#" class="dropdown-1" style="background-color:#92afd7"><i class="fa fa-flag fa-stack-1x text-inverse fa-lg fa-fw" style="border-color:white;border-radius:50%;border-style:solid;border-width:2px;padding:3px"></i></a>
+          </li>
+          <li>
+            <a href="#">
+              <button class="btn btn-primary-darker text-right" data-toggle="button"> <i class="fa fa-fw fa-plus"></i>New <i class="fa fa-caret-down"></i> </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron"> <svg version="1.1" class="ac-logo" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 252.4 39.9" enable-background="new 0 0 252.4 39.9" xml:space="preserve" style="max-width:300px;color:white!important;" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <g>
+                    <path d="M26,1.7H2.4C1.1,1.7,0,2.7,0,4v33.1c0,1.3,1.1,2.4,2.4,2.4H26c1.3,0,2.4-1.1,2.4-2.4V4C28.4,2.7,27.3,1.7,26,1.7z
+			 M14.3,28.3c-0.3,0.5-0.7,0.5-1.1,0.1L4.6,18.2h5.8l2,2.3c0.3,0.4,0.8,0.3,1.1-0.1l5.1-9.3h5.1L14.3,28.3z" style="color:white!important"></path>
+                  </g>
+                  <g>
+                    <path d="M55.8,1.6h-4.1c-0.1,0-0.1,0-0.1,0.1L40.7,39.4c0,0,0,0.1,0,0.1c0,0,0.1,0,0.1,0h4.6c0.1,0,0.1,0,0.1-0.1l2.3-8.5h11.8
+			l2.4,8.5c0,0.1,0.1,0.1,0.1,0.1h4.7c0,0,0.1,0,0.1,0c0,0,0-0.1,0-0.1l-11-37.6C55.9,1.7,55.8,1.6,55.8,1.6z M53.7,8.8l2.1,8.2
+			l2.7,9.6h-9.6l2.7-9.6L53.7,8.8L53.7,8.8z"></path>
+                    <path d="M85.6,33.9c-0.7-0.4-1.4-0.7-2-1.1c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0.1c-0.7,1.3-2.2,2.7-4.4,2.7c-3.8,0-5.6-3.2-5.6-9.9
+			c0-4.7,0.7-9,5.6-9c2,0,3.6,1.1,4.4,2.9c0,0,0,0.1,0.1,0.1c0,0,0.1,0,0.1,0l3.6-2.2c0.1,0,0.1-0.1,0-0.2c-1.5-3.2-4.5-5-8.3-5
+			c-6.6,0-10.2,4.7-10.2,13.3c0,7.1,1.2,14.4,10.2,14.4c3.8,0,6.9-1.8,8.3-4.9c0-0.1,0-0.1-0.1-0.2C86.7,34.4,86.1,34.1,85.6,33.9z"></path>
+                    <path d="M100.5,35.3H99c-1.8,0-2.6-1-2.6-3.2V16.3h3.7c0.1,0,0.1-0.1,0.1-0.1v-3.6c0-0.1-0.1-0.1-0.1-0.1h-3.7V5.8
+			c0-0.1-0.1-0.1-0.1-0.1h-4.4c-0.1,0-0.1,0.1-0.1,0.1v6.7h-2.9c-0.1,0-0.1,0.1-0.1,0.1v3.6c0,0.1,0.1,0.1,0.1,0.1h2.9v17
+			c0,3.8,2.5,6.2,6.3,6.2h2.4c0.1,0,0.1-0.1,0.1-0.1v-4C100.6,35.3,100.5,35.3,100.5,35.3z"></path>
+                    <path d="M109.3,12.5H105c-0.1,0-0.1,0.1-0.1,0.1v26.8c0,0.1,0.1,0.1,0.1,0.1h4.4c0.1,0,0.1-0.1,0.1-0.1V12.6
+			C109.5,12.6,109.4,12.5,109.3,12.5z"></path>
+                    <path d="M109.3,1.6H105c-0.1,0-0.1,0.1-0.1,0.1v4.4c0,0.1,0.1,0.1,0.1,0.1h4.4c0.1,0,0.1-0.1,0.1-0.1V1.7
+			C109.5,1.7,109.4,1.6,109.3,1.6z"></path>
+                    <path d="M124.5,12.2c-4.2,0-7.4,1.9-8.9,5.3c-0.9,2.2-1.1,5.9-1.1,8.7c0,2.9,0.2,6.8,1.3,9c1.5,3,4.3,4.7,8.1,4.7
+			c2.7,0,7.6-0.7,9.2-5.7c0.6-1.8,0.9-6.3,0.9-8.2c0-3.4-0.4-7.7-1.4-9.4C130.8,13.6,128.2,12.2,124.5,12.2z M129.3,25.8
+			c0,3.5-0.2,5.7-0.5,6.6c-0.7,2.2-2.4,3.3-4.7,3.3c-2.2,0-3.7-1-4.5-3c-0.5-1.4-0.6-3.7-0.6-6c0-3.4,0.3-6,0.7-7.4
+			c0.7-1.8,2.4-2.9,4.5-2.9c2.1,0,3.7,1.1,4.4,3.2C129.2,20.6,129.3,22.6,129.3,25.8z"></path>
+                    <path d="M149.6,12.2c-2.7,0-4.9,1.1-6.5,3.2v-2.8c0-0.1-0.1-0.1-0.1-0.1h-4.4c-0.1,0-0.1,0.1-0.1,0.1v26.8c0,0.1,0.1,0.1,0.1,0.1
+			h4.3c0.1,0,0.1-0.1,0.1-0.1V22c0-3.1,1.9-5.2,4.8-5.2c3,0,4.8,1.8,4.8,5.1v17.5c0,0.1,0.1,0.1,0.1,0.1h4.4c0.1,0,0.1-0.1,0.1-0.1
+			V20.5C157.3,15.6,154.2,12.2,149.6,12.2z"></path>
+                    <path d="M180.5,5.9c3.1,0,5.3,1.6,6,4.5c0,0,0,0.1,0.1,0.1c0,0,0.1,0,0.1,0l4.3-1.7c0.1,0,0.1-0.1,0.1-0.2
+			c-1.4-4.6-5.3-7.3-10.6-7.3c-6.6,0-11.1,4.5-11.1,11.3v15.8c0,6.9,4.4,11.4,11.1,11.4c5.3,0,9.3-2.8,10.6-7.4c0-0.1,0-0.1-0.1-0.1
+			l-4.3-1.6c0,0-0.1,0-0.1,0c0,0-0.1,0-0.1,0.1c-0.7,2.8-3,4.5-6,4.5c-3.2,0-6.4-2.3-6.4-6.7v-16C174.1,9.4,176.1,5.9,180.5,5.9z"></path>
+                    <path d="M203.5,12.2c-3.8,0-7.1,1.8-8.4,4.7c0,0.1,0,0.1,0,0.2c1.1,0.7,2.3,1.4,3.4,2.1c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1-0.1
+			c0.9-2.1,3.4-2.5,4.8-2.5c3,0,4.7,1.3,4.7,3.8v3.2h-4.8c-6,0-9.4,3.1-9.4,8.4c0,4.8,3.1,8,7.8,8c2.9,0,5.1-0.8,6.4-2.3l0.1,0v1.9
+			c0,0.1,0.1,0.1,0.1,0.1h4.4c0.1,0,0.1-0.1,0.1-0.1v-19C212.9,14.9,209.7,12.2,203.5,12.2z M208.2,27.5V31c0,3.7-2.8,4.5-5.1,4.5
+			c-3,0-4.7-1.4-4.7-3.9c0-2.7,1.7-4.1,4.7-4.1H208.2z"></path>
+                    <path d="M229.4,12.2c-3.2,0-5.1,1-6.6,3.5v-3c0-0.1-0.1-0.1-0.1-0.1h-4.3c-0.1,0-0.1,0.1-0.1,0.1v26.7c0,0.1,0.1,0.1,0.1,0.1h4.3
+			c0.1,0,0.1-0.1,0.1-0.1V22.8c0-3.7,1.9-5.7,5.4-5.7c0.9,0,1.8,0.2,2.6,0.6c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1-0.1l1-4.7
+			c0-0.1,0-0.1-0.1-0.1C231.4,12.5,230.4,12.2,229.4,12.2z"></path>
+                    <path d="M252.2,0h-4.4c-0.1,0-0.1,0.1-0.1,0.1v14.6c-1.5-1.6-3.4-2.5-5.7-2.5c-7.6,0-8.6,7.4-8.6,13.9c0,7.1,1,13.8,8.2,13.8
+			c2.6,0,4.6-0.9,6.1-2.8v2.3c0,0.1,0.1,0.1,0.1,0.1h4.4c0.1,0,0.1-0.1,0.1-0.1V0.1C252.4,0.1,252.3,0,252.2,0z M245.9,34.3
+			c-0.7,0.7-1.7,1.1-3,1.1c-2.5,0-4.9-1.1-4.9-9.4c0-5.5,0.8-9.2,4.9-9.2c2.5,0,4.7,1,4.7,8.5l0,0.6
+			C247.8,28.5,247.8,32.4,245.9,34.3z"></path>
+                  </g>
+                </g>
+              </svg>
+            <h3 class="text-muted">Action Check Style Guide</h3> <span class="lead text-muted">
+                <a href="#new" class="btn btn-primary" style="margin-top:20px;border-radius:0px;background-color:#92afd7!important;">View Styles</a>
+              </span> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section " style="background-color:#fafafa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Colors</h1>
+          <hr>
+          <ol class="list-inline" id="new" style="padding-right:10px;padding-left:10px;">
+            <li style="margin-botom:5px;width:100px;height:100px;color:white;background-color:#92afd7;border-radius:50%;padding:20px;box-shadow:0 0 8px black;border: 5px solid #999;">#92AFD7</li>
+            <li style="margin-botom:5px;width:100px;height:100px;color:white;background-color:#fffffb;border-radius:50%;padding:20px;color:black;box-shadow:0 0 8px black;border:5px solid #999">#FFFFFB</li>
+            <li style="margin-botom:5px;width:100px;height:100px;color:white;background-color:#6e879f;border-radius:50%;padding:20px;color:white;box-shadow:0 0 8px;border:5px solid #999">#6E879F</li>
+            <li style="margin-botom:5px;width:100px;height:100px;color:black!important;background-color:#d0e5b5;border-radius:50%;padding:20px;color:white;box-shadow:0 0 8px;border:5px solid #999">#D0E5B5</li>
+            <li style="margin-top:5px;width:100px;height:100px;color:white!important;background-color:#777;border-radius:50%;padding:20px;color:white;box-shadow:0 0 8px;border:5px solid #999">#777777</li>
+            <li style="margin-top:7px;width:100px;height:100px;color:black!important;background-color:ghostwhite;border-radius:50%;padding:20px;color:white;box-shadow:0 0 8px;border:5px solid #999">#F8F8FF</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <h1>Fonts</h1>
+          <hr>
+          <ol class="lead list-unstyled">
+            <li style="padding-top:10px;padding-bottom:10px;"> <b>Primary Font:&nbsp;</b>"proxima-nova", sans-serif;</li>
+            <li> <b>Secondary Font:</b>"Helvetica Neue", Helvetica, Arial, sans-serif"</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Typography</h1>
+          <hr> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="list-unstyled">
+            <li> <span class="lead" style="font-size:28px;font-weight:100;">Heading 1</span> </li>
+            <li> <span style="font-weight:none;font-size:24px">Heading 2</span> </li>
+            <li> <span style="font-weight:none;font-size:22px">Heading 2</span> </li>
+            <li> <span style="font-size:1em!important;font-weight:400!important;color:#555;">Paragraph:</span>This is an ordinary paragraph that is long enough to wrap to multiple lines so that you can see how the line spacing looks.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well well-lg">
+            <h2>Icons</h2>
+            <hr>
+            <ul class="list-inline" style="padding-left:10px;padding-right:10px;">
+              <li> <i class="fa fa-desktop fa-2x"></i> </li>
+              <li> <i class="fa fa-cog fa-2x"></i> </li>
+              <li> <i class="fa fa-area-chart fa-2x"></i> </li>
+              <li> <i class="fa fa-university fa-2x"></i> </li>
+              <li> <i class="fa fa-flag fa-2x"></i> </li>
+              <li> <i class="fa fa-map-marker fa-2x"></i> </li>
+              <li> <i class="fa fa-list fa-2x"></i> </li>
+              <li> <i class="fa fa-comments fa-2x"></i> </li>
+              <li>
+                <div>
+                  <img id="AvatarImage" style="display: none;"> <span id="Initials" class="fa-stack user-initials">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <strong class="fa-stack-1x icon-text fa-inverse">BN</strong>
+                    </span> </div>
+              </li>
+              <li>One</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="background-color:#fafafa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header text-muted">
+            <h2 style="color:black">Buttons</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="text-left"> <b>Default Buttons</b> </h5>
+          <p>Default Response Buttons</p>
+          <p class="text-left">
+            <a class="btn btn-default">Yes</a>
+            <a class="btn btn-default">No</a>
+            <a class="btn btn-default">N/A</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5> <b>Large Category Header Button</b> </h5>
+          <p>block level button</p>
+          <p>
+            <button class="categoryHeader btn-lg btn btn-block" style="background-color:rgba(126, 142, 158, 0.35)">Select (0/4)</button>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-left"> <b>Default Dropdown Button</b> </h5>
+          <p>Action dropdown button</p>
+          <p>
+            <button class="btn btn-default btn-block dropdown-toggle">Actions <span class="caret"></span> </button>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5> <b>New Message</b> </h5>
+          <p>Green outlined Button</p>
+          <p>
+            <button class="btn btn-outline btn-success btn-block btn-sm background-clor"> <i class="fa fa-fw fa-plus-circle"></i>New Message</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="background-color:#fafafa">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="text-left"> <b>Add a Person</b> </h5>
+          <p>Default Response Buttons</p>
+          <p class="text-left">
+            <button class="btn btn-success new-person"> <i class="fa fa-fw fa-plus"></i>N/A</button>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-left text-muted"> <b>Back</b> </h5>
+          <p>Default Response Buttons</p>
+          <p class="text-left"></p>
+          <div class="clearfix">
+            <button class="prev-panel btn btn-default btn-sm"> <i class="fa fa-fw fa-rotate-180 fa-toggle-right"></i>Back</button>
+            <button id="btnRemoveAvatar" class="btn btn-default btn-sm"> <i class="fa fa-times"></i>Use Your Initials</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-left text-muted"> <b>Navbar-Toggle Button</b> </h5>
+          <p>Default Response Buttons</p>
+          <p class="text-left">
+            <button class=" btn btn-primary-darker"> <i class="fa fa-fw fa-plus"></i>New <i class="fa fa-caret-down"></i> </button>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-left text-muted"> <b>Reviews/Details</b> </h5>
+          <p>View Review</p>
+          <p class="text-left">
+            <a class="btn btn-primary form-control abcefd">View Review</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>List Group</h1>
+          <hr>
+          <div class="list-group companyMenu" style="border-radius:0!important;">
+            <a href="/Preferences/Account" class="list-group-item" style="border-radius:0!important;">General</a>
+            <a href="/Preferences/Company" class="list-group-item active" style="border-radius:0!important;background-color:#92AFD7">Company</a>
+            <a href="/Preferences/Team" class="list-group-item" style="border-radius:0!important;">Team</a>
+            <a href="/Preferences/ReviewTools" class="list-group-item" style="border-radius:0!important;">Review Tools</a>
+            <a href="/Preferences/ReportTags" class="list-group-item" style="border-radius:0!important;">Report Tags</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h1>Form</h1>
+          <hr>
+          <p>
+            <input class="form-control input-lg text-box single-line valid" data-val="true" data-val-required="The Company Name field is required." id="Name" name="Name" type="text" value="Vol Sol ActionCheck" aria-required="true" aria-invalid="false" aria-describedby="Name-error"> </p>
+          <div class="form-group"> <label for="OldPassword">Current Password</label>
+            <input class="form-control" type="password" id="OldPassword" name="OldPassword" style="border-radius:0px">
+            <br>
+            <input class="form-control" type="password" id="ConfirmPassword" name="ConfirmPassword" style="border-radius:0px">
+            <br>
+            <button type="submit" class="btn btn-success btn-block">Save New Account Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="background-color:#f7f7f7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1></h1>
+        </div>
+        <div class="col-md-6">
+          <h3>Radio Buttons</h3>Email Notification Preferences
+          <br>
+          <br>
+          <div class="checkbox"> <label>
+                <input type="checkbox" id="DailySummary" name="DailySummary" value="on">
+                <strong>Daily Summaries</strong>
+              </label>
+            <div class="checkbox"> <label>
+                  <input type="checkbox" id="WeeklySummary" name="WeeklySummary" value="on">
+                  <strong>Weekly Summaries</strong>
+                </label>
+              <div class="checkbox"> <label>
+                    <input type="checkbox" id="KeyNotifications" name="KeyNotifications" value="on">
+                    <strong>Upon Key Reviews being Submitted</strong>
+                  </label> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
