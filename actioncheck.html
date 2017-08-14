@@ -4,6 +4,7 @@
   <title>Action Check Style Guide</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -257,8 +258,8 @@
   <link rel="stylesheet" href="Example.css"> </head>
 
 <body>
-  <div class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#92afd7;padding-left:15px;padding-right:15px;">
-    <div class="container">
+  <div class="navbar navbar-expand-lg " style="background-color:#92afd7;padding-left:15px;padding-right:15px;">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar-ex-collapse" style="background-color:transparent;border-color:transparent;"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar" style="color:white!important;background-color:white;"></span> <span class="icon-bar" style="color:white!important;background-color:white;"></span> <span class="icon-bar" style="color:white!important;background-color:white;"></span>          </button>
         <a class="navbar-brand" href="#">
@@ -267,11 +268,11 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbar-ex-collapse" style="background:#92afd7">
         <ul class="nav navbar-nav navbar-right">
           <li class="active">
-            <a href="#" class="dropdown-1" style="background-color:#92afd7"><i class="fa fa-flag fa-stack-1x text-inverse fa-lg fa-fw" style="border-color:white;border-radius:50%;border-style:solid;border-width:2px;padding:3px"></i></a>
+            <a href="#" class="dropdown-1" style="background-color:#92afd7"><i class="fa fa-flag fa-stack-1x text-inverse fa-lg fa-fw pull-right d-inline-block" style="border-color:white;border-radius:50%;border-style:solid;border-width:2px;padding:3px"></i></a>
           </li>
           <li>
             <a href="#">
-              <button class="btn btn-primary-darker text-right" data-toggle="button" style="border-radius:0px;"> <i class="fa fa-fw fa-plus"></i>New <i class="fa fa-caret-down"></i> </button>
+              <button class="btn btn-primary-darker text-right" data-toggle="button" style="border-radius:0px;"> <i class="fa fa-fw fa-plus"></i>New <i class="fa fa-caret-down d-inline-block"></i> </button>
             </a>
           </li>
         </ul>
@@ -359,7 +360,7 @@
       </div>
     </div>
   </div>
-  <div class="section">
+  <div class="section py-2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -379,7 +380,7 @@
       </div>
     </div>
   </div>
-  <div class="section opaque opaque-fade-out" style="">
+  <div class="section opaque opaque-fade-out py-2" style="">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -409,7 +410,7 @@
       </div>
     </div>
   </div>
-  <div class="section opaque" style="background-color:#fafafa">
+  <div class="section opaque py-3" style="background-color:#fafafa">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -446,13 +447,13 @@
           <h5> <b>New Message</b> </h5>
           <p>Green outlined Button</p>
           <p>
-            <button class="btn btn-outline btn-success btn-block btn-sm background-clor"> <i class="fa fa-fw fa-plus-circle"></i>New Message</button>
+            <button class="btn btn-outline btn-success btn-block btn-sm background-clor" style="border-radius:0px!important"> <i class="fa fa-fw fa-plus-circle"></i>New Message</button>
           </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="section" style="background-color:#fafafa">
+  <div class="section py-3" style="background-color:#fafafa">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -481,7 +482,7 @@
           <h5 class="text-left text-muted"> <b>Reviews/Details</b> </h5>
           <p>View Review</p>
           <p class="text-left">
-            <a class="btn form-control abcefd">View Review</a>
+            <a class="btn form-control abcefd" style="height:20px;width:auto;vertical-align:middle;background:#92afd7;color:white;">View Review</a>
           </p>
         </div>
       </div>
